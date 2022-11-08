@@ -1,0 +1,19 @@
+[package]
+name = "debug-map-sorted"
+version = "0.1.0"
+edition = "2021"
+authors = ["Jarred Allen <jarredallen73@gmail.com>"]
+description = "Sorted Debug impl for HashMap"
+repository = "https://github.com/JarredAllen/debug-map-sorted"
+documentation = "https://docs.rs/crate/debug-map-sorted/latest"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+categories = ["rust-patterns"]
+keywords = ["debug", "output", "hashmap"]
+
+[dependencies]
+itertools = "0.10.5"
+
+[dev-dependencies]
+quickcheck = "1.0.3"
+quickcheck_macros = "1.0.0"
