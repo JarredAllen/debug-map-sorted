@@ -1,6 +1,6 @@
 [package]
 name = "debug-map-sorted"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Jarred Allen <jarredallen73@gmail.com>"]
 description = "Sorted Debug impl for HashMap"

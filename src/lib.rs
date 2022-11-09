@@ -5,12 +5,13 @@ use std::{collections::HashMap, fmt::Debug, hash::Hash};
 
 /// A wrapper for [`HashMap`] which sorts itself for `Debug` output
 ///
-/// You probably want to use a [`BTreeMap`] if you want your data to be sorted, but if
-/// outputting is rare (or is only included transiently for debugging purposes), it may make
-/// more sense to use this trait instead of changing the underlying type.
+/// You probably want to use a [`BTreeMap`](std::collections::BTreeMap) if you want your
+/// data to be sorted, but if outputting is rare (or is only included transiently for
+/// debugging purposes), it may make more sense to use this trait instead of changing the
+/// underlying type.
 ///
 /// Also see [`SortedOutputExt`] for a syntactically cleaner method of constructing this type.
-pub struct SortedHashMapDebugOutput<'a, K, V>(&'a HashMap<K, V>);
+pub struct SortedHashMapDebugOutput<'a, K, V>(pub &'a HashMap<K, V>);
 
 impl<'a, K, V> Debug for SortedHashMapDebugOutput<'a, K, V>
 where
